@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+:root {
+  --primary: rgba(37, 99, 235, 1);
+  --secondary: rgba(16, 185, 129, 1);
+  --background: rgba(255, 255, 255, 1);
+  --text: rgba(30, 30, 30, 1);
+  --danger: rgba(220, 38, 38, 1);
+  --footer: rgb(16, 24, 40);
+  --card: rgb(244, 245, 255);
+  --para: rgb(74, 85, 101);
+
+  --radius: 8px;
+  --font-size: 16px;
+}
+
+.active {
+  color: var(--primary) !important;
+  border-bottom: var(--primary) solid 2px;
+}
+/* Header Start */
+.navbar{
+  background-color:#dad5d5d3 !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  gap: 3rem;
+}
+
+header {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.726), rgba(255, 255, 255, 0.4)),
+    url("../image/imgi_1_photo-1763568258535-fa1066506571.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.header-content {
+  min-height: 100vh;
+}
+.header-content .header-text h3 {
+  background-color: var(--background);
+  color: var(--primary);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.header-content .header-text h2 {
+  color: var(--text);
+  font-size: 60px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.header-content .header-text h2 span {
+  font-weight: 700;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header-content .header-text h5 {
+  color: var(--para);
+  font-size: 30px;
+  font-weight: 400;
+  width: 100%;
+}
+.header-content .header-text p {
+  color: var(--para);
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+
+.header-content .image {
+  border-radius: 20px;
+  animation: imageAnimation 3s infinite ease;
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fa-computer-mouse {
+  left: 50%;
+  bottom: 20px;
+  animation: imageAnimation 4s infinite ease;
+}
+
+.badge-welcome {
+    background-color: #e7f0ff;
+    color: #0d6efd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.img-wrapper img {
+    border: 10px solid white; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+
+
+/* Header end */
+
+/* section 1 start */
+
+.custom-card {
+  background-color: var(--card);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  background-color: #ffffff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  border-color: #e2e8f0;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 24px;
+}
+/* section 1 End */
+
+/* section 2 start */
+#section-2 {
+  background-color: rgb(249, 250, 251);
+}
+#section-2 .project-card {
+  background-color: var(--background);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+}
+#section-2 .project-card .image {
+  height: 300px;
+}
+#section-2 .project-card .image .links {
+  left: 11px;
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0.726);
+  color: var(--primary);
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+#section-2 .project-card .image:hover .links {
+  transform: translateY(0);
+}
+#section-2 .project-card .tec div span {
+  color: var(--primary);
+  background-color: rgb(219, 234, 254);
+  display: inline-block;
+  width: 100px;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+#section-2 .project-card:hover {
+  transform: translateY(-10px);
+  background-color: #ffffff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* section 2 End */
+
+/* Footer start */
+footer {
+  background-color: var(--footer);
+  color: var(--para);
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 28px;
+}
+footer ul li a,
+footer p {
+  color: rgb(153, 161, 175);
+}
+/* Footer End */
+
+/* Contact  start*/
+#section-contact-2 {
+  background-color: rgb(249, 250, 251);
+}
+.hero {
+  background: linear-gradient(to right, #941cfa, #175dfc);
+  height: 40vh;
+  color: #fff;
+}
+.hero .text h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+#section-contact-2 p{
+  color: var(--para);
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+#section-contact-2 .email {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+#section-contact-2 .email .col-2 {
+  background-color: var(--card);
+  color: var(--primary);
+  height: 50px;
+  transform: translateY(10%);
+  
+}
+#section-contact-2 .email:hover{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#section-contact-2 .email:hover .col-2 {
+  background-color: var(--primary);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.form{
+  background-color: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px 10px;
+}
+.form form label{
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+.form form input{
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.form form .btn{
+  height: 60px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+
+/* Section 3 start */
+
+#section-contact-3 .about p{
+  color:var(--para);
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+#section-contact-3 .about .col-6{
+    background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+#section-contact-3 .about .col1{
+  background-color:#eff6ff ;
+  color: var(--primary);
+}
+#section-contact-3 .about .col2{
+  background-color:#f0fdf4 ;
+  color: orange;
+}
+#section-contact-3 .about .col3{
+  background-color:#faf5ff ;
+  color: orangered;
+}
+#section-contact-3 .about .col4{
+  background-color:#fff7ed ;
+  color: green;
+}
+/* Section 3 End */
